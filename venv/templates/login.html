@@ -1,0 +1,25 @@
+<head>
+<link rel="icon" href="data:;base64,=">
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<title>Вход</title>
+<ul class="mainmenu">
+    {% for m in menu -%}
+</li><a href="{{m.url}}" class="sliding-button">{{m.name}}</a></li>
+    {% endfor -%}
+</ul>
+<link type="text/css" href="{{ url_for('static', filename='css/styles.css')}}" rel="stylesheet" />
+
+{% block content %}
+<form class="decor">
+<div class="form-left-decoration"></div>
+<div class="form-right-decoration"></div>
+<div class="circle"></div>
+<div class="form-inner"/>
+</form>
+<form action="/login" method="post" class="form-contact">
+<p><label>Имя: </label> <input type="text" name="username" value=""  required />
+<p><label>Пароль: </label> <input type="password" name="psw" value="" required />
+<p><input type="submit" value="вход" />
+</form>
+{% endblock %}    

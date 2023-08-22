@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>каталог</title>
+
+<link rel="icon" href="data:;base64,=">
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+<link type="text/css" href="{{ url_for('static', filename='css/styles.css')}}" rel="stylesheet"/>
+
+</head>
+
+<ul class="mainmenu">
+    {% for m in menu -%}
+</li><a href="{{m.url}}" class="sliding-button">{{m.name}}</a></li>
+    {% endfor -%}
+</ul>
+
+<body>
+<div class="post-item">
+<div class="item-content">
+<div class="item-icon group"></div>
+<div class="item-body">
+<h3>что-то</h3>
+<p></p>
+</div>
+<div class="item-footer">
+<a href="#" class="link"><span>Подробнее</span></a>
+</div>
+</div>
+</div>
+</div>
+
+<div class="post-item">
+<div class="item-content">
+<div class="item-icon group"></div>
+<div class="item-body">
+<h3>что-то 2</h3>
+<p></p>
+</div>
+<div class="item-footer">
+<a href="#" class="link"><span>Подробнее</span></a>
+</div>
+</div>
+</div>
+</div>
+
+<div class="post-item">
+<div class="item-content">
+<div class="item-icon group"></div>
+<div class="item-body">
+<h3>что-то 3</h3>
+<p></p>
+</div>
+<div class="item-footer">
+<a href="#" class="link"><span>Подробнее</span></a>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

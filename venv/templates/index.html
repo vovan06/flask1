@@ -1,0 +1,81 @@
+
+<head>
+<link rel="icon" href="data:;base64,=">
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
+
+<link type="text/css" href="{{ url_for('static', filename='css/styles.css')}}" rel="stylesheet" />
+<title>права сергея</title>
+
+</head>
+
+<ul class="mainmenu">
+    {% for m in menu -%}
+</li><a href="{{m.url}}" class="sliding-button">{{m.name}}</a></li>
+    {% endfor -%}
+</ul>
+
+
+
+<style>
+*{
+   padding: 0;
+   margin: 0;
+}
+.container-1{
+    display: flex;
+    /*align-items: strech;*/
+    /*flex-direction: row;*/
+}
+
+}
+
+.container-1 div{
+    padding: 10px;
+    border: 1px solid silver;
+}
+
+.box-1 {
+   flex: 1;
+   order: 1;
+   color: #FFF0F5;
+   justify-content: center;
+   text-decoration: underline;
+}
+
+.box-2 {
+   flex: 1;
+   order: 1;
+   color: #FFF0F5;
+   justify-content: center;
+}
+
+.box-3 {
+   flex: 1;
+   order: 1;
+   color: #FFF0F5;
+   justify-content: center;
+   text-decoration: underline;
+}
+
+.box {
+   flex-basis:;
+}
+
+
+</style>
+
+<body>
+<div class="container-1">
+    </div>
+    <div class="box-2">
+        <center>
+        <img src="/Users/vovabarashev/PycharmProjects/pythonProject2/venv/static/hh.png" width="350" height="350">
+        <a href="" class="sliding-button">купить права сергея</a>
+        </center>
+        </div>
+    </div>
+</div>
+</body>
+
+

@@ -1,0 +1,102 @@
+
+<head>
+<link rel="icon" href="data:;base64,=">
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
+
+<link type="text/css" href="{{ url_for('static', filename='css/styles.css')}}" rel="stylesheet" />
+<title>Главная страница</title>
+
+</head>
+
+<ul class="mainmenu">
+    {% for m in menu -%}
+</li><a href="{{m.url}}" class="sliding-button">{{m.name}}</a></li>
+    {% endfor -%}
+</ul>
+
+
+
+<style>
+*{
+   padding: 0;
+   margin: 0;
+}
+.container-1{
+    display: flex;
+    /*align-items: strech;*/
+    /*flex-direction: row;*/
+}
+
+}
+
+.container-1 div{
+    padding: 10px;
+    border: 1px solid silver;
+}
+
+.box-1 {
+   flex: 1;
+   order: 1;
+   color: #FFF0F5;
+   justify-content: center;
+   text-decoration: underline;
+}
+
+.box-2 {
+   flex: 1;
+   order: 1;
+   color: #FFF0F5;
+   justify-content: center;
+}
+
+.box-3 {
+   flex: 1;
+   order: 1;
+   color: #FFF0F5;
+   justify-content: center;
+   text-decoration: underline;
+}
+
+.box {
+   flex-basis:;
+}
+
+
+</style>
+
+<body>
+<div class="container-1">
+    <div class="box-1">
+        <h2></h2>
+        <p>
+            <div class="image-wrapper">
+            <div class="image-inner">
+            <img src="https://andpro.ru/upload/iblock/a1b/2de407c8_0cc3_11e8_80e2_001e67d1aaeb_c576275a_0cc3_11e8_80e2_001e67d1aaeb.jpg" width="50" height="350">
+            </div>
+            </div>
+            <a href="" class="sliding-button">купить</a>
+            <h1></h1>
+        </p>
+    </div>
+    <div class="box-2">
+        <div class="image-wrapper">
+            <h2><center>НАШ ВЫБОР</center></h2>
+            <h2><center>я пиздец бляяяя</center></h2>
+        </div>
+    </div>
+    <div class="box-3">
+        <h2></h2>
+        <p>
+            <div class="image-wrapper">
+            <div class="image-inner">
+            <img src="https://www.hardwareluxx.ru/images/stories/reviews/a/2018/March/MasterBox_TD500L.jpg" width="50" height="350">
+            </div>
+            </div>
+            <a href="" class="sliding-button">купить</a>
+
+        </p>
+    </div>
+</div>
+</body>
+
